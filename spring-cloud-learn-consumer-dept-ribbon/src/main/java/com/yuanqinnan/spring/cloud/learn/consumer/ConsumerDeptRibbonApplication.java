@@ -2,6 +2,7 @@ package com.yuanqinnan.spring.cloud.learn.consumer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 /**
  * Description: spring-cloud-learn
@@ -10,6 +11,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
+@EnableHystrix
 public class ConsumerDeptRibbonApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConsumerDeptRibbonApplication.class, args);

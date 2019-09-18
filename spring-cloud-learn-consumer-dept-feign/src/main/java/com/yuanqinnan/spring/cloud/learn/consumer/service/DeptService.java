@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * Created by yuanqn on 2019/9/16 22:05
  */
 //服务提供者的名字
-@FeignClient(value = "spring-cloud-learn-provider-dept")
+@FeignClient(value = "spring-cloud-learn-provider-dept", fallbackFactory = DeptServiceFallbackFactory.class)
 public interface DeptService {
 
     @RequestMapping(value = "hi", method = RequestMethod.GET)
