@@ -9,10 +9,11 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-cloud-learn-zuul</artifactId>
+    <artifactId>spring-cloud-learn-config</artifactId>
     <packaging>jar</packaging>
 
-    <name>spring-cloud-learn-zuul</name>
+    <name>spring-cloud-learn-config</name>
+
     <dependencies>
         <!-- Spring Boot Begin -->
         <dependency>
@@ -37,11 +38,11 @@
         <!-- Spring Cloud Begin -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <!-- Spring Cloud End -->
     </dependencies>
