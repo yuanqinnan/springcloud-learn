@@ -20,6 +20,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <!-- Spring Settings -->
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <zipkin.version>2.10.1</zipkin.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -30,6 +31,21 @@
                     <type>pom</type>
                     <scope>import</scope>
                 </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
